@@ -5,7 +5,6 @@
 # grabbing the first three octets of the local network IP
 IP=$(ip a s | grep "inet\b" | grep wlp3s0 | cut -d " " -f6 | cut -d . -f1-3)
 
-
 OUTPUT="liveIPs.txt"
 echo -e  "Output will be saved to.. $OUTPUT\n"
 # checking if output file exist and cteating new one
